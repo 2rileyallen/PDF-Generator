@@ -1,0 +1,144 @@
+{
+  "fonts": [
+    {
+      "family": "Roboto",
+      "styles": { "regular": "Roboto-Regular.ttf", "bold": "Roboto-Bold.ttf", "italic": "Roboto-Italic.ttf" }
+    },
+    { "family": "RobotoLight", "file": "Roboto-Light.ttf" },
+    { "family": "RobotoBlack", "file": "Roboto-Black.ttf" }
+  ],
+  "image_sources": {
+    "cover_nebula": "https://images.pexels.com/photos/2150/sky-space-dark-galaxy.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "toc_earth": "https://images.pexels.com/photos/87651/earth-blue-planet-globe-planet-87651.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "sun_hero": "https://images.pexels.com/photos/176851/pexels-photo-176851.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "mercury": "https://i.imgur.com/3Qp7X5A.png",
+    "venus": "https://i.imgur.com/sBE3KBE.png",
+    "earth": "https://i.imgur.com/wgYvASa.png",
+    "mars": "https://i.imgur.com/k27k69p.png",
+    "jupiter": "https://images.pexels.com/photos/624015/pexels-photo-624015.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "neptune": "https://images.pexels.com/photos/47367/full-moon-moon-bright-sky-47367.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "galaxy_conclusion": "https://images.pexels.com/photos/110854/pexels-photo-110854.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+  },
+  "pages": [
+    {
+      "page_number": 1,
+      "elements": [
+        { "type": "image", "nickname": "cover_nebula", "x": 0, "y": 0, "w": 210 },
+        { "type": "rectangle", "x": 0, "y": 0, "w": 210, "h": 297, "r": 5, "g": 19, "b": 34, "opacity": 0.4 },
+        { "type": "text", "content": "SYMPHONY OF", "x": 0, "y": 120, "font_family": "RobotoLight", "font_size": 30, "align": "C", "width": 210, "r": 200, "g": 200, "b": 255 },
+        { "type": "text", "content": "SPACE", "x": 0, "y": 135, "font_family": "RobotoBlack", "font_size": 90, "align": "C", "width": 210, "r": 255, "g": 255, "b": 255 },
+        { "type": "text", "content": "AN EXPLORATION OF OUR SOLAR SYSTEM", "x": 0, "y": 175, "font_family": "Roboto", "font_size": 12, "align": "C", "width": 210, "r": 200, "g": 200, "b": 255 }
+      ]
+    },
+    {
+      "page_number": 2,
+      "elements": [
+        { "type": "rectangle", "x": 0, "y": 0, "w": 210, "h": 297, "r": 248, "g": 249, "b": 250 },
+        { "type": "image", "nickname": "toc_earth", "x": 130, "y": 0, "w": 80 },
+        { "type": "define_column", "name": "toc_col", "x": 20, "y": 40, "w": 100 },
+        { "type": "use_column", "name": "toc_col" },
+        { "type": "text", "content": "Table of Contents", "font_family": "RobotoBlack", "font_size": 32, "r": 40, "g": 40, "b": 40 },
+        { "type": "add_spacing", "h": 5 },
+        { "type": "line", "x1": 20, "y1": 55, "x2": 70, "y2": 55, "width": 1, "r": 80, "g": 120, "b": 255 },
+        { "type": "add_spacing", "h": 20 },
+        { "type": "toc_item", "number": "01", "title": "Our Star, The Sun", "page": "3" },
+        { "type": "add_spacing", "h": 5 },
+        { "type": "toc_item", "number": "02", "title": "The Inner Worlds", "page": "4" },
+        { "type": "add_spacing", "h": 5 },
+        { "type": "toc_item", "number": "03", "title": "The Gas Giants", "page": "5" },
+        { "type": "add_spacing", "h": 5 },
+        { "type": "toc_item", "number": "04", "title": "The Outer Reaches", "page": "6" },
+        { "type": "add_spacing", "h": 5 },
+        { "type": "toc_item", "number": "05", "title": "Conclusion", "page": "7" }
+      ]
+    },
+    {
+      "page_number": 3,
+      "elements": [
+        { "type": "image", "nickname": "sun_hero", "x": 0, "y": 0, "w": 210 },
+        { "type": "rectangle", "x": 0, "y": 0, "w": 210, "h": 90, "r": 255, "g": 100, "b": 0, "opacity": 0.3 },
+        { "type": "define_column", "name": "main_text", "x": 20, "y": 100, "w": 120 },
+        { "type": "define_column", "name": "sidebar", "x": 150, "y": 100, "w": 40 },
+        { "type": "use_column", "name": "main_text" },
+        { "type": "text", "content": "01. OUR STAR, THE SUN", "font_family": "Roboto", "font_size": 10, "r": 180, "g": 180, "b": 180 },
+        { "type": "add_spacing", "h": 3 },
+        { "type": "text", "content": "The Heart of the System", "font_family": "RobotoBlack", "font_size": 28, "r": 40, "g": 40, "b": 40 },
+        { "type": "add_spacing", "h": 5 },
+        { "type": "text", "content": "The Sun is a nearly perfect sphere of hot plasma, with internal convective motion that generates a magnetic field via a dynamo process. It is by far the most important source of energy for life on Earth.", "font_family": "RobotoLight", "font_size": 11, "r": 80, "g": 80, "b": 80 },
+        { "type": "use_column", "name": "sidebar" },
+        { "type": "icon_block", "icon_nickname": "mercury", "title": "DIAMETER", "value": "1.39M km" },
+        { "type": "add_spacing", "h": 15 },
+        { "type": "icon_block", "icon_nickname": "venus", "title": "SURFACE TEMP", "value": "5,505 °C" }
+      ]
+    },
+    {
+      "page_number": 4,
+      "elements": [
+        { "type": "rectangle", "x": 0, "y": 0, "w": 210, "h": 297, "r": 248, "g": 249, "b": 250 },
+        { "type": "define_column", "name": "col1", "x": 20, "y": 80, "w": 80 },
+        { "type": "define_column", "name": "col2", "x": 110, "y": 80, "w": 80 },
+        { "type": "text", "content": "02. THE INNER WORLDS", "x": 20, "y": 25, "font_family": "Roboto", "font_size": 10, "r": 180, "g": 180, "b": 180 },
+        { "type": "text", "content": "The Terrestrial Planets", "x": 20, "y": 33, "font_family": "RobotoBlack", "font_size": 28, "r": 40, "g": 40, "b": 40 },
+        { "type": "use_column", "name": "col1" },
+        { "type": "circular_image", "nickname": "mercury", "r": 35 },
+        { "type": "add_spacing", "h": 5 },
+        { "type": "text", "content": "<b>Mercury:</b> The smallest and fastest planet, it zips around the Sun in just 88 Earth days.", "font_family": "Roboto", "font_size": 9, "align": "C" },
+        { "type": "add_spacing", "h": 20 },
+        { "type": "circular_image", "nickname": "earth", "r": 35 },
+        { "type": "add_spacing", "h": 5 },
+        { "type": "text", "content": "<b>Earth:</b> Our home, the only known planet to harbor complex life, a vibrant blue marble.", "font_family": "Roboto", "font_size": 9, "align": "C" },
+        { "type": "use_column", "name": "col2" },
+        { "type": "circular_image", "nickname": "venus", "r": 35 },
+        { "type": "add_spacing", "h": 5 },
+        { "type": "text", "content": "<b>Venus:</b> Earth's toxic twin, with a thick, crushing atmosphere and runaway greenhouse effect.", "font_family": "Roboto", "font_size": 9, "align": "C" },
+        { "type": "add_spacing", "h": 20 },
+        { "type": "circular_image", "nickname": "mars", "r": 35 },
+        { "type": "add_spacing", "h": 5 },
+        { "type": "text", "content": "<b>Mars:</b> The Red Planet, a cold desert world that may have once hosted liquid water and life.", "font_family": "Roboto", "font_size": 9, "align": "C" }
+      ]
+    },
+    {
+      "page_number": 5,
+      "elements": [
+        { "type": "rectangle", "x": 0, "y": 0, "w": 210, "h": 297, "r": 248, "g": 249, "b": 250 },
+        { "type": "define_column", "name": "chart_col", "x": 20, "y": 160, "w": 90 },
+        { "type": "define_column", "name": "text_col", "x": 120, "y": 160, "w": 70 },
+        { "type": "text", "content": "03. THE GAS GIANTS", "x": 20, "y": 25, "font_family": "Roboto", "font_size": 10, "r": 180, "g": 180, "b": 180 },
+        { "type": "text", "content": "Kings of the System", "x": 20, "y": 33, "font_family": "RobotoBlack", "font_size": 28, "r": 40, "g": 40, "b": 40 },
+        { "type": "image", "nickname": "jupiter", "x": 20, "y": 60, "w": 170 },
+        { "type": "use_column", "name": "chart_col" },
+        { "type": "pie_chart", "r": 40, "title": "Jupiter's Atmosphere", "data": {"Hydrogen": 89, "Helium": 10, "Other": 1} },
+        { "type": "use_column", "name": "text_col" },
+        { "type": "text", "content": "The gas giants are colossal worlds composed primarily of hydrogen and helium. Jupiter alone is more than twice as massive as all the other planets in the Solar System combined.", "font_family": "RobotoLight", "font_size": 10 }
+      ]
+    },
+    {
+      "page_number": 6,
+      "elements": [
+        { "type": "rectangle", "x": 0, "y": 0, "w": 210, "h": 297, "r": 248, "g": 249, "b": 250 },
+        { "type": "define_column", "name": "left", "x": 20, "y": 140, "w": 80 },
+        { "type": "define_column", "name": "right", "x": 110, "y": 140, "w": 80 },
+        { "type": "text", "content": "04. THE OUTER REACHES", "x": 20, "y": 25, "font_family": "Roboto", "font_size": 10, "r": 180, "g": 180, "b": 180 },
+        { "type": "text", "content": "Ice Giants & Beyond", "x": 20, "y": 33, "font_family": "RobotoBlack", "font_size": 28, "r": 40, "g": 40, "b": 40 },
+        { "type": "image", "nickname": "neptune", "x": 20, "y": 60, "w": 170 },
+        { "type": "use_column", "name": "left" },
+        { "type": "text", "content": "<b>Uranus & Neptune</b> are the ice giants, with atmospheres containing higher amounts of 'ices' like water, ammonia, and methane.", "font_family": "Roboto", "font_size": 10 },
+        { "type": "use_column", "name": "right" },
+        { "type": "text", "content": "Beyond them lies the Kuiper Belt, a vast, icy debris field, home to dwarf planets like Pluto. It is the frontier of our solar system.", "font_family": "Roboto", "font_size": 10 },
+        { "type": "progress_bar", "x": 20, "y": 220, "w": 170, "h": 10, "label": "Exploration Progress of Kuiper Belt", "value": 15, "max_value": 100 }
+      ]
+    },
+    {
+      "page_number": 7,
+      "elements": [
+        { "type": "image", "nickname": "galaxy_conclusion", "x": 0, "y": 0, "w": 210 },
+        { "type": "rectangle", "x": 0, "y": 0, "w": 210, "h": 297, "r": 0, "g": 0, "b": 0, "opacity": 0.6 },
+        { "type": "define_column", "name": "conclusion_col", "x": 25, "y": 130, "w": 160 },
+        { "type": "use_column", "name": "conclusion_col" },
+        { "type": "text", "content": "THE JOURNEY CONTINUES", "align": "C", "font_family": "RobotoLight", "font_size": 14, "r": 200, "g": 200, "b": 255 },
+        { "type": "add_spacing", "h": 15 },
+        { "type": "text", "content": "Our understanding of the cosmos is ever-expanding. The worlds of our solar system are just the first chapter in an infinite story written in the stars.", "align": "C", "font_family": "Roboto", "font_size": 18, "r": 255, "g": 255, "b": 255 }
+      ]
+    }
+  ]
+}
