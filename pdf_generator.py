@@ -118,8 +118,24 @@ class PDF(FPDF):
             if el_type == "text":
                 self.set_font(element.get("font_family"), size=element.get("font_size", 12))
                 self.set_text_color(element.get("r",0), element.get("g",0), element.get("b",0))
-                self.write_html(f'<p align="{element.get("align", "left")}">{element.get("content", "")}</p>')
-                if self.current_column: self.columns[self.current_column]['current_y'] = self.get_y()
+
+                align = element.get("align", "L")
+                if align.lower() == "center":
+                    align = "C"
+                elif align.lower() == "right":
+                    align = "R"
+                else:
+                    align = "L"
+
+                content = element.get("content", "")
+                content = content.replace("<b>", "**").replace("</b>", "**")
+
+                if self.current_column:
+                    col = self.columns[self.current_column]
+                    self.multi_cell(w=col['w'], text=content, markdown=True, align=align, new_x=XPos.LMARGIN, new_y=YPos.NEXT)
+                    self.columns[self.current_column]['current_y'] = self.get_y()
+                else:
+                    self.multi_cell(w=0, text=content, markdown=True, align=align, new_x=XPos.LMARGIN, new_y=YPos.NEXT)
 
             elif el_type == "toc_item":
                 col_width = self.get_current_column_width()
